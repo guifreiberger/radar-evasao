@@ -8,7 +8,7 @@
 |---|---|
 | Artur Z. | _a preencher_ |
 | Guilherme F. | _a preencher_ |
-| Lucas Mueller | _a preencher_ |
+| Lucas Mueller | Rodou o notebook 01 do zero (todas as saídas batem com as do repositório). Acrescentou a análise de evasão por forma de ingresso (seção 7 do notebook 01) |
 | Vinicius | Rodou o notebook 02 do zero e conferiu os números com o README e a apresentação (todos batem). Analisou os 36 falsos negativos (seção 7.1 do notebook 02) |
 
 ---
@@ -74,8 +74,11 @@ Principais achados da exploração:
 - Mensalidades atrasadas: 87% de evasão, contra 25% de quem estava em dia.
 - Bolsistas evadem bem menos (12% contra 39%).
 - A evasão varia de 15% (Enfermagem) a 54% (Engenharia Informática).
+- **Forma de ingresso:** "maiores de 23 anos" (55%) e "titulares de outro curso superior" (61%) evadem bem acima da média. Os maiores de 23 anos são 18% dos alunos, mas respondem por 31% das evasões. No concurso nacional, a evasão sobe a cada fase (20% na 1ª, 29% na 2ª, 36% na 3ª). As diferenças continuam ao comparar alunos da mesma idade e com o mesmo desempenho no 1º semestre (seção 7 do notebook 01).
 
 <p align="center"><img src="reports/figuras/05_desempenho_1sem.png" width="85%"></p>
+
+<p align="center"><img src="reports/figuras/13_evasao_forma_ingresso.png" width="70%"></p>
 
 ### 4.2 Em que momento prever? Três cenários
 
