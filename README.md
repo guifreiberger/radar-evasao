@@ -9,7 +9,7 @@
 | Artur Z. | _a preencher_ |
 | Guilherme F. | _a preencher_ |
 | Lucas Mueller | _a preencher_ |
-| Vinicius | _a preencher_ |
+| Vinicius | Rodou o notebook 02 do zero e conferiu os números com o README e a apresentação (todos batem). Analisou os 36 falsos negativos (seção 7.1 do notebook 02) |
 
 ---
 
@@ -151,6 +151,7 @@ A **taxa de aprovação no 1º semestre** é de longe o fator mais importante: e
 ### 5.4 Erros e limitações
 
 - **Falsos negativos (36):** parecem alunos que vão bem (aprovação de 84%, mensalidades em dia). Provavelmente saíram por motivos que **não estão nos dados**: emprego, mudança, saúde, troca de curso.
+  - Olhando caso a caso: todos tinham mensalidades em dia, 19 continuaram bem também no 2º semestre e 14 ficaram perto do limiar (entre 0,10 e 0,17). Rodando o modelo de novo no fim do 2º semestre, 11 dos 36 receberiam o alerta, então vale usar o modelo **em duas rodadas** (fim do 1º e do 2º semestre). Detalhes na seção 7.1 do notebook 02.
 - **Falsos positivos (158):** têm desempenho fraco, e **94 deles ainda estavam matriculados**, ou seja, atrasados no curso. Para a coordenação, também são alunos que precisam de atenção.
 - **Equidade:** o recall fica entre 80% e 94% em todos os grupos de sexo, turno e faixa etária.
 - **3 classes:** prever *evadiu / matriculado / formado* dá 74% de acurácia, mas só 33% de recall em "matriculado" e 71% em "evadiu". Isso confirma a escolha pelo alvo binário.
