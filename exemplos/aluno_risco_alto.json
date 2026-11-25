@@ -1,0 +1,21 @@
+{
+  "_titulo": "Risco alto: Engenharia Informática, mensalidades atrasadas",
+  "_descricao": "Aluno fictício: Engenharia Informática, ingressou na 2ª fase, mensalidades atrasadas e 1 aprovação em 6 disciplinas no 1º semestre.",
+  "curso": 9119,
+  "forma_ingresso": 17,
+  "turno_diurno": 1,
+  "idade_ingresso": 24,
+  "sexo_masculino": 1,
+  "estado_civil": 1,
+  "nota_admissao": 118.0,
+  "deslocado": 0,
+  "bolsista": 0,
+  "devedor": 1,
+  "mensalidades_em_dia": 0,
+  "disc_1sem_creditadas": 0,
+  "disc_1sem_matriculadas": 6,
+  "disc_1sem_avaliacoes": 8,
+  "disc_1sem_aprovadas": 1,
+  "disc_1sem_nota_media": 10.5,
+  "disc_1sem_sem_avaliacao": 0
+}

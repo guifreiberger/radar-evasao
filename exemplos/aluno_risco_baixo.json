@@ -1,0 +1,21 @@
+{
+  "_titulo": "Risco baixo: Enfermagem, bolsista, todas aprovadas",
+  "_descricao": "Aluna fictícia: Enfermagem, 1ª fase, bolsista, mensalidades em dia, aprovada em todas as 7 disciplinas.",
+  "curso": 9500,
+  "forma_ingresso": 1,
+  "turno_diurno": 1,
+  "idade_ingresso": 18,
+  "sexo_masculino": 0,
+  "estado_civil": 1,
+  "nota_admissao": 140.0,
+  "deslocado": 1,
+  "bolsista": 1,
+  "devedor": 0,
+  "mensalidades_em_dia": 1,
+  "disc_1sem_creditadas": 0,
+  "disc_1sem_matriculadas": 7,
+  "disc_1sem_avaliacoes": 8,
+  "disc_1sem_aprovadas": 7,
+  "disc_1sem_nota_media": 13.8,
+  "disc_1sem_sem_avaliacao": 0
+}

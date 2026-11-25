@@ -1,0 +1,21 @@
+{
+  "_titulo": "Risco moderado: Gestão noturno, 4 de 6 aprovações",
+  "_descricao": "Aluna fictícia: Gestão (noturno), ingresso por 'maiores de 23 anos', mensalidades em dia, 4 aprovações em 6 disciplinas.",
+  "curso": 9991,
+  "forma_ingresso": 39,
+  "turno_diurno": 0,
+  "idade_ingresso": 31,
+  "sexo_masculino": 0,
+  "estado_civil": 2,
+  "nota_admissao": 125.0,
+  "deslocado": 0,
+  "bolsista": 0,
+  "devedor": 0,
+  "mensalidades_em_dia": 1,
+  "disc_1sem_creditadas": 0,
+  "disc_1sem_matriculadas": 6,
+  "disc_1sem_avaliacoes": 9,
+  "disc_1sem_aprovadas": 4,
+  "disc_1sem_nota_media": 11.5,
+  "disc_1sem_sem_avaliacao": 0
+}
