@@ -1,0 +1,38 @@
+{
+  "cenario": "1_semestre",
+  "modelo": "Gradient Boosting",
+  "melhores_parametros": {
+    "learning_rate": 0.1,
+    "max_iter": 200,
+    "max_leaf_nodes": 7
+  },
+  "limiar": 0.17,
+  "metricas_validacao_cruzada": {
+    "limiar": 0.17,
+    "roc_auc": 0.9107878439031677,
+    "pr_auc": 0.8734521844730843,
+    "acuracia": 0.8038994066120373,
+    "precisao": 0.6402786573780874,
+    "recall": 0.8891820580474934,
+    "f1": 0.7444771723122239,
+    "f2": 0.8250367227027909,
+    "verdadeiros_positivos": 1011,
+    "falsos_positivos": 568,
+    "falsos_negativos": 126,
+    "verdadeiros_negativos": 1834
+  },
+  "metricas_teste": {
+    "limiar": 0.17,
+    "roc_auc": 0.9008753017271683,
+    "pr_auc": 0.8447872719785222,
+    "acuracia": 0.7807909604519774,
+    "precisao": 0.6108374384236454,
+    "recall": 0.8732394366197183,
+    "f1": 0.7188405797101449,
+    "f2": 0.8041504539559015,
+    "verdadeiros_positivos": 248,
+    "falsos_positivos": 158,
+    "falsos_negativos": 36,
+    "verdadeiros_negativos": 443
+  }
+}
