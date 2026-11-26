@@ -6,10 +6,10 @@
 
 | Integrante | Contribuição |
 |---|---|
-| Artur Z. | _a preencher_ |
-| Guilherme F. | _a preencher_ |
+| Artur Zanella | Pesquisou os dados de evasão no Brasil no Censo da Educação Superior (INEP) e os incluiu na introdução, com as fontes (seção 1 e referências) |
+| Guilherme Freiberger | Montou o projeto: preparação dos dados, notebooks de exploração e modelagem, comparação e treino dos modelos, previsão para novos alunos, interface em Streamlit e README |
 | Lucas Mueller | Rodou o notebook 01 do zero (todas as saídas batem com as do repositório). Acrescentou a análise de evasão por forma de ingresso (seção 7 do notebook 01) |
-| Vinicius | Rodou o notebook 02 do zero e conferiu os números com o README e a apresentação (todos batem). Analisou os 36 falsos negativos (seção 7.1 do notebook 02) |
+| Vinicius Fernandes | Rodou o notebook 02 do zero e conferiu os números com o README e a apresentação (todos batem). Analisou os 36 falsos negativos (seção 7.1 do notebook 02) |
 
 ---
 
@@ -21,7 +21,26 @@ Treinamos um modelo que estima a **probabilidade de um aluno de graduação evad
 
 ## 1. Introdução
 
-A evasão no ensino superior é um problema caro para todos os lados: o aluno perde tempo e dinheiro, a instituição perde receita e vagas ociosas, e a sociedade perde profissionais formados. No Brasil, o Censo da Educação Superior do INEP acompanha a trajetória dos ingressantes e mostra que a desistência é uma parte relevante dessas trajetórias. Pela teoria clássica de Tinto (1975), a evasão é um processo gradual, ligado à integração acadêmica e social do estudante. Isso significa que **há sinais antes da saída**, e que uma intervenção precoce (monitoria, apoio financeiro, acolhimento) pode mudar o desfecho.
+A evasão no ensino superior é um problema caro para todos os lados: o aluno perde tempo e dinheiro, a instituição perde receita e fica com vagas ociosas, e a sociedade perde profissionais formados.
+
+No Brasil, ela atinge a maioria dos ingressantes. O Censo da Educação Superior do INEP acompanha, ano a ano, a trajetória de cada turma de ingressantes. Na edição de 2024, dos alunos que entraram na graduação em 2015, **60% tinham desistido do curso até 2024** (o décimo ano de acompanhamento), 39% se formaram e 1% continuava matriculado (INEP, 2025). O número quase não muda de uma turma para outra: ficou entre 58% e 60% para os ingressantes de 2010 a 2015.
+
+| Ingressantes de 2015, situação em 2024 | Desistência acumulada |
+|---|---|
+| **Brasil** | **60%** |
+| Rede pública / rede privada | 53% / 62% |
+| Presencial / EaD | 59% / 65% |
+| Rede privada: com FIES / sem FIES | 47% / 65% |
+| Rede privada: com Prouni / sem Prouni | 41% / 64% |
+
+*Fonte: INEP (2025), gráficos 63 a 69. Conta como desistência o aluno desvinculado do curso em que ingressou ou transferido para outro curso da mesma instituição (INEP, 2017). É uma medida de saída do curso, não necessariamente do ensino superior.*
+
+Dois pontos desses dados sustentam a proposta deste projeto:
+
+- **A desistência acontece cedo.** 13% dos ingressantes de 2015 saíram ainda no ano de ingresso e 29% até o fim do ano seguinte, quase metade de toda a desistência acumulada em dez anos. Um alerta só ajuda se chegar antes disso, e o modelo deste projeto prevê ao fim do 1º semestre (seção 4.2).
+- **Apoio financeiro anda junto com permanência.** Na rede privada, quem tinha FIES ou Prouni desistiu bem menos do que quem não tinha. O mesmo padrão aparece nos dados deste projeto, em que bolsistas evadem bem menos (seção 4.1).
+
+Pela teoria clássica de Tinto (1975), a evasão é um processo gradual, ligado à integração acadêmica e social do estudante. Isso significa que **há sinais antes da saída**, e que uma intervenção precoce (monitoria, apoio financeiro, acolhimento) pode mudar o desfecho.
 
 O problema é que coordenações de curso costumam ter centenas de alunos e pouco tempo. **Uma ferramenta que priorize quem mais precisa de atenção** ajuda a usar melhor esse tempo.
 
@@ -265,7 +284,8 @@ O modelo treinado já está no repositório, então o app funciona sem treinar d
 
 - BREIMAN, L. Random Forests. **Machine Learning**, v. 45, p. 5-32, 2001.
 - FRIEDMAN, J. H. Greedy function approximation: a gradient boosting machine. **The Annals of Statistics**, v. 29, n. 5, p. 1189-1232, 2001.
-- INEP. **Censo da Educação Superior**. Brasília: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. Disponível em: <https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-da-educacao-superior>.
+- INEP. **Metodologia de cálculo dos indicadores de fluxo da educação superior**. Brasília: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira, 2017. Disponível em: <https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2017/metodologia_indicadores_trajetoria_curso.pdf>. Acesso em: 25 nov. 2026.
+- INEP. **Censo da Educação Superior 2024: divulgação dos resultados**. Brasília: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira, 17 set. 2025. Disponível em: <https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf>. Acesso em: 25 nov. 2026.
 - KE, G. et al. LightGBM: a highly efficient gradient boosting decision tree. In: **Advances in Neural Information Processing Systems 30 (NIPS 2017)**, 2017.
 - PEDREGOSA, F. et al. Scikit-learn: Machine Learning in Python. **Journal of Machine Learning Research**, v. 12, p. 2825-2830, 2011.
 - REALINHO, V.; MACHADO, J.; BAPTISTA, L.; MARTINS, M. V. Predicting Student Dropout and Academic Success. **Data**, v. 7, n. 11, p. 146, 2022. DOI: [10.3390/data7110146](https://doi.org/10.3390/data7110146).
